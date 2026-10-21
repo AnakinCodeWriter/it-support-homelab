@@ -121,8 +121,8 @@ The four Defender tickets were handled by Priya Shah and closed following Alice'
 - [Documentation](Documentation/): original network diagram, operations runbook, fault log and lab notes.
 - [Core screenshot evidence](Screenshots/): AD structure, group nesting, DHCP, domain membership, shares, containers and support workflows.
 - [Microsoft 365 evidence](M365-Evidence/): supporting evidence from the hybrid identity and cloud management extension.
-- [Defender documentation](Documentation/Defender/): Defender lab notes and exported documentation.
-- [Defender screenshots](Screenshots/Defender/): policy deployment, incidents, scanning, isolation, patching and troubleshooting evidence.
+- [Defender documentation](Defender/Documentation/): Defender lab notes and exported documentation.
+- [Defender screenshots](Defender/Screenshots/): policy deployment, incidents, scanning, isolation, patching and troubleshooting evidence.
 
 The runbook covers startup/shutdown order, health checks and recovery procedures. Screenshots support specific claims; a file listing alone does not prove write/delete access, and policy deployment alone does not prove a detection was triggered.
 
