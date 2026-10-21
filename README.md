@@ -109,6 +109,11 @@ The table summarises selected tickets. Additional Microsoft 365 exercises are de
 | #1 | Cannot access Sales | Simulated report; actual access succeeded, so no permissions change was required. |
 | #2 | GLPI database initialization incomplete | Retrospective deployment fault: diagnosed missing database/user and verified recovery using a fresh MySQL volume. |
 | #3 | CLIENT01 cannot obtain an IP address | Retrospective DHCP service troubleshooting exercise. |
+| #4 | New employee missing from Microsoft 365 | Moved Jamie Taylor from the default Users container into the synchronised Sales OU and triggered delta sync. Verified the cloud account appeared; it remained unlicensed. |
+| #5 | MFA recovery after a simulated phone replacement | Used a short-lived Temporary Access Pass to re-register Authenticator, removed the pass and verified fresh Outlook sign-in with password and MFA. |
+| #6 | CLIENT01 marked noncompliant | Corrected the deliberately excessive minimum OS requirement from 10.0.30000.0 to 10.0.26200.0 and verified compliance recovery. Application blocking through Conditional Access was not tested. |
+| #7 | Alice blocked from Microsoft 365 sign-in | Cleared the deliberate cloud sign-in block and verified fresh Outlook access with password and Authenticator after an initial retry returned HTTP 401. |
+| #8 | New AD password rejected by Microsoft 365 | Restarted the deliberately stopped ADSync service, confirmed Running status and verified the new password worked in a fresh Outlook session after password hash synchronisation. |
 | #9 | Downloaded EICAR file disappeared | Confirmed antivirus detection and removal using Windows Security and Defender incident #2. |
 | #10 | Cannot change antivirus settings | Confirmed protection remained enabled and the controls were centrally managed. |
 | #11 | CLIENT01 missing from Defender inventory | Removed a Linux platform filter; the device reappeared without re-onboarding. |
